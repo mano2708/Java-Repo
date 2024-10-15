@@ -30,8 +30,18 @@
 
 public class Sample {
 
-// Demonstrating Datatypes in JAVA..
     public static void main(String[] arg){
+        Sample sample = new Sample();
+        sample.datatypes();
+        sample.literals();
+        sample.type_casting();
+
+    }
+    
+    public void datatypes(){
+        
+        // Demonstrating Datatypes in JAVA..
+        
         byte byte_num = 127; // Min value = -128 to Max value = 127  
         short short_num = 3200; // Min value = -32768 to Max value = 32767  
         int integer_num = 12; // Min value = -2^31 to  Max value = 2^31-1  
@@ -45,6 +55,8 @@ public class Sample {
 
         boolean bool_var = true; // 
 
+        System.out.println("DataTypes in Java");
+
         System.out.println("Byte : "+byte_num);
         System.out.println("Short : "+ short_num);
         System.out.println("Integer : "+integer_num);
@@ -57,8 +69,12 @@ public class Sample {
 
         System.out.println("Boolean : "+ bool_var);
 
+    }
+
+    public void literals(){
 
         // LITERALS
+        System.out.println("Literals in Java");
 
         int num1 = 0x7E;    // Converts the hexa-decimal value to decimal value
         int num2 = 0b101;    // Converts the binary value to decimal value
@@ -69,5 +85,25 @@ public class Sample {
         System.out.println(c);
         c++;
         System.out.println(c);
+
     }
+
+
+    public void type_casting(){
+
+        // Type Casting in JAVA
+
+        System.out.println("Type Casting in Java");
+
+        int a=42;
+        byte b;
+        b=(byte)a;
+        System.out.println(b);
+        System.out.println(a);
+
+        float f= 5.2345f;
+        int i1 = (int) f;
+        System.out.println(i1);
+    }
+
 }
